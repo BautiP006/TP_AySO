@@ -1,0 +1,151 @@
+sudo dnf update -y
+sudo dnf install @kde-desktop
+sudo systemctl set-default graphical.target
+sudo systemctl disable gdm
+sudo systemctl enable sddm
+reboot
+gsettings set org.gnome.desktop.interface enable-animations false
+gsettings set org.gnome.desktop.wm.preferences button-layout ''
+gsettings set org.gnome.shell.extensions.user-theme animation-speed 0
+gsettings set org.gnome.desktop.interface enable-animations false
+gsettings set org.gnome.shell.extensions.user-theme animation-speed 0
+systemsettings5 --kcm=kcmkwin --page=animation
+systemsettings --kcm=kcmkwin --page=animation
+systemctl list-unit-files --type service --all
+reboot
+❯ sudo systemctl stop cups-browsed.service
+❯ sudo systemctl disable cups-browsed.service
+cups-browsed.service
+❯ sudo systemctl stop cups.service
+sudo systemctl enable cups.service
+sudo systemctl start cups.service
+❯ sudo systemctl enable cups-browsed.service
+systemctl list-unit-files | grep enabled
+udo dnf -y remove kmag
+sudo dnf -y remove kmines
+sudo dnf -y remove kmousetool
+sudo dnf -y remove kmouth
+sudo dnf -y remove kpat
+sudo dnf -y remove kamoso
+sudo dnf -y remove krfb
+sudo dnf -y remove ktnef
+sudo dnf -y remove kaddressbook
+sudo dnf -y remove konversation
+sudo dnf -y remove kf5-akonadi-server
+sudo dnf -y remove mariadb
+sudo dnf -y remove mariadb-backup
+sudo dnf -y remove mariadb-common
+sudo dnf -y remove gwenview
+sudo dnf -y remove elisa-player
+sudo dnf -y remove libreoffice-draw.x86_64
+sudo dnf -y remove libreoffice-impress.x86_64
+sudo dnf -y remove libreoffice-math.x86_64
+sudo dnf -y remove pim*
+sudo dnf -y remove akonadi*
+sudo dnf -y remove akregator
+sudo dnf -y remove korganizer
+sudo dnf -y remove kmail
+sudo systemctl stop nginx
+sudo systemctl disable nginx
+# Eliminar el paquete NGINX
+sudo apt-get purge nginx nginx-common -y        # Desinstalar el paquete
+sudo rm -rf /etc/apt/sources.list.d/nginx.list  # Eliminar los repositorios
+# Eliminar los ficheros
+sudo rm -rf /etc/nginx          # Configuración
+sudo rm -rf /var/log/nginx      # Logs
+sudo rm -rf /var/cache/nginx    # Cache
+sudo rm -rf /etc/letsencrypt    # Certificados
+sudo rm -rf /var/www            # Web
+sudo rm -rf /var/lib/mysql      # Base de datos
+# Refrescar la lista de paquetes
+sudo apt-get update         
+sudo systemctl stop nginx
+sudo systemctl disable nginx
+sudo apt-get purge nginx nginx-common -y  
+sudo rm -rf /etc/apt/sources.list.d/nginx.list  
+sudo rm -rf /etc/nginx
+sudo rm -rf /var/log/nginx
+sudo rm -rf /var/cache/nginx
+sudo rm -rf /etc/letsencrypt
+sudo rm -rf /var/www 
+sudo rm -rf /var/lib/mysql      
+sudo apt-get update
+yum install rpmconf; rpmconf -a
+find /etc /var -name '*?.rpm?*'
+@Îñ
+dnf install git
+sudo dnf install git
+git init
+ssh-keygen -t ed25519
+cd 
+mkdir -p repogit
+cd repogit
+git clone git@github.com:BautiP006/TP_AySO.git
+ssh-add 2025
+ssh-add 0559
+ssh-keygen -t rsa -b 4096 -C "pinkiewiczbauti@gmail.com"
+ssh-add 0559
+cat 0559.pub
+ssh -T git@github.com
+git clone git@github.com:BautiP006/TP_AySO.git
+cd TP_AySO/
+pwd
+ls -l
+cat /etc/os-release
+man grep
+grep HOME_URL/etc/os-release
+grep homw_url/etc/os-release
+grep home_url/etc/os-release
+grep -i home_url/etc/os-release>datos_url.txt
+grep HOME_URL/etc/os-release
+man grep
+grep -i home_url/etc/os-release>datos_url.txt
+grep -i HOME_URL/etc/os-release>datos_url.txt
+grep -i HOME_url/etc/os-release>datos_url.txt
+grep -i Home_utl/etc/os-release>datos_url.txt
+grep -i Home_utr/etc/os-release>datos_url.txt
+grep HOME_URL /etc/os-release
+grep -i Home_utr/etc/os-release>datos_url.txt
+grep -i Home_utr /etc/os-release>datos_url.txt
+whoami
+echo"Usuario=$(whoami)">datos_usuario.txt
+echo="Usuario=$(whoami)">datos_usuario.txt
+cat datos_usuarios.txt
+cat datos_usuario.txt
+git add.
+git add .
+git config --global user.name "Bautip006"
+git config --global user.email "pinkiewiczbauti@gmail.com"
+git commit -m "ADD: agregado 1er ejercicio sobre datos_usuario.txt"
+git status
+git push
+grep
+grep "model name"/proc/cpuinfo|head -n1>>datos_usuario.txt
+grep "model name"/proc/cpuinfo | head -n1>>datos_usuario.txt
+grep "model name" /proc/cpuinfo | head -n1 >> datos_usuario.txt
+cat datos_usuario.txt
+git add datos_usuario.txt
+git commit -m "feat: Añadiendo Informacion de CPU"
+git push
+Alumno: Bautista Pinkiewicz
+cat <<EOF >> README.md Alumno: Bautista Pinkiewicz Division: 114 Turno: Mañana
+EOF
+
+cat <<EOF >> README.md
+Alumno: Bautista Pinkiewicz Division: 114 Turno: Mañana
+EOF
+
+git add README.md datos_ususario.txt}
+git add README.md datos_ususario.txt
+cat README.md
+git add README.md datos_ususario.txt
+git add README.md
+git commit -m "ADD: Añadiendo readme y datos de usuario"
+git push
+makdir
+mkdir
+mkdir -p ~/estructura/materia1/uni{1,2,3} ~/estructura2/material2/uni{1,2,3}
+nano script_dir.sh
+git push
+historial -a
+history -a
